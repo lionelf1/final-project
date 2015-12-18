@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body { 
+    font-family:arial;
+    font-size:13px;
+    line-height:1.5em;
+    color:#fff;
+
+    background-image: url(../images/musicBG.jpg);
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-color: #464646; 
+    height:100%;
+}
+
+button { 
+    width: 40px; 
+    height: 40px; 
+    display:block; 
+    margin:0 auto; 
+    margin-top:50%; 
+    cursor:pointer; 
+    border: none;
+}
+
+button#playlist { 
+    background: url(../images/controls/grey/\.png) no-repeat; 
+    background-size:75%; 
+}
+button#play{ 
+    background: url(../images/controls/grey/play.png) no-repeat; 
+    background-size:75%; 
+}
+button#pause { 
+    background: url(../images/controls/grey/pause.png) no-repeat; 
+    background-size:75%; 
+}
+button#prev { 
+    background: url(../images/controls/grey/previous.png) no-repeat; 
+    background-size:75%; 
+}
+button#next { 
+    background: url(../images/controls/grey/next.png) no-repeat; 
+    background-size:75%; 
+}
+button#stop { 
+    background: url(../images/controls/grey/stop.png) no-repeat; 
+    background-size:75%;
+}
+
+.mainContainer > .twoColumn { 
+    width:100%; 
+    max-height:100%; 
+}
+.col-1 { 
+    width: 6%; 
+    height: 100%;
+}
+.toolsPane { 
+    background-color: black; 
+    position: absolute; 
+    opacity:0.8; 
+}
+
+.playlistContainer { 
+    position: relative; height:10%; 
+    background-image: url(../images/musicBGblur.jpg); 
+    opacity:0.8;
+    margin-left:6%; 
+ }
+.playlistContainer li a { 
+    font-size:0px; line-height:0px; 
+    color:transparent; 
+}
+.playlistContainer li { 
+    display:inline-block; 
+    padding:7px; 
+}
+.playlistContainer li img { 
+    width:100px; height:100px; 
+    border:1px solid white; 
+}
+.playlistContainer li img:hover , .playlistContainer li.activeAudio img{ 
+    border:1px solid yellow; 
+}
+
+.clearfix{
+    clear:both;
+}
+
+#container{
+    width:330px;
+    min-height:400px;
+    background-image: url(../images/musicBGblur.jpg);
+    overflow:auto;
+    margin:60px auto;
+    position: relative;
+    right: 10px;
+    opacity: 66%;
+    border-radius: 10px;
+}
+
+#audio-image{
+    position:relative;
+    overflow:hidden;
+    height:200px;
+    margin-bottom:15px;
+}
+
+#audio-info{
+    text-align:center;
+}
+
+#audio-info .artist{
+    font-weight:bold;
+}
+
+.cover{
+    width:100%;
+    z-index:1;
+}
+
+input#volume {
+    width:95%;
+    margin-left:2%;
+    -webkit-appearance: none !important;
+    background:#ccc;
+    height:1px;
+    margin-bottom:20px;
+}
+
+input#volume::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:url(../images/knob.png) no-repeat;
+    height:12px;
+    width:12px;
+}
+
+#audio-buttons{
+    width:90%;
+    display: block;
+    margin: 15px auto;
+    margin-left:23px;
+    overflow:auto;
+}
+
+
+#playlist {
+    list-style-type: none;
+    padding:10px;
+
+}
+
+#playlist li {
+    cursor: pointer;
+    margin:5px;
+}
+
+#tracker{
+    position:relative;
+    width:100%;
+}
+
+#playlist li.active {
+    font-weight: bold;
+    padding:3px;
+    background:#666;
+}
+
+#progressBar { 
+   width:80%;
+   margin-left:2%;
+   margin-bottom:20px;
+   margin-top:9px;
+   height:10px;
+   background:url(../images/progress_bg.png) no-repeat;
+   float:left;
+}
+
+#progress {
+   background:url(../images/progress.png) no-repeat;
+   height:10px;
+   display:inline-block;
+   position: absolute;
+   top: 9px;
+   left: 8px;
+}
+
+#duration{
+    position:absolute;
+    top:0;
+    right:10px;
+    padding:4px 8px;
+    background:#000;
+    border-radius:5px;
+}
+
+
+

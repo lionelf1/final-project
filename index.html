@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="twoColumn">
+			<div class="col-1 toolsPane">
+			 	<span><button id="playlist"></button></span>
+			 	<span><button id="prev"></button></span>	
+			 	<span><button id="play"></button></span>
+			 	<span><button id="pause"></button></span>
+			 	<span><button id="stop"></button></span>			
+			 	<span><button id="next"></button></span>
+
+			</div>
+
+<div id="audioPlayer" class="col-2 container">
+	<div class="playlistContainer">
+		 	<ul id="playlist" class="hidden">
+
+				<li song="Antidote.mp3" cover="index.jpg" artist="Travis Scott"><a href="#"><img src="images/covers/index.jpg"> Antidote.mp3</a></li>
+
+            	<li song="How To Love.mp3" cover="index2.jpg" artist="Lil Wayne"><a href="#"><img src="images/covers/index2.jpg">How To Love.mp3</a></li>
+
+            	<li song=" Numbers On The Board.mp3" cover="index3.jpg" artist="Pusha T"><a href="#"><img src="images/covers/index3.jpg"> Numbers On The Board.mp3</a></li>
+
+            	<li song="BBHMM.mp3" cover="index4.jpg" artist="Rihanna"><a href="#"><img src="images/covers/index4.jpg">BBHMM.mp3</a></li>
+
+            	<li song=" Where Ya At (feat. Drake).mp3" cover="index5.jpg" artist="Future"><a href="#"><img src="images/covers/index5.jpg"> Where Ya At (feat. Drake).mp3</a></li>
+            </ul>
+    </div>
+
+ 	<div id="container">
+ 		<ul id="playlist" class="hidden">
+
+
+			<div id="audio-image">
+				<img class="cover">
+			</div>
+
+			<div id="audio-player">
+
+			<div id="audio-info">
+				<span class="artist"></span> - <span class="title"></span>
+			</div>
+
+			<div id="tracker">
+				<div id="progressbar">
+					<span id="progress"></span>
+
+			</div>
+				<span id="duration"></span>
+			</div>
+
+            	<li song="Antidote.mp3" cover="index.jpg" artist="Travis Scott">Antidote.mp3</li>
+
+            	<li song="How To Love.mp3" cover="index2.jpg" artist="Lil Wayne">How To Love.mp3</li>
+
+            	<li song=" Numbers On The Board.mp3" cover="index3.jpg" artist="Pusha T"> Numbers On The Board.mp3</li>
+
+            	<li song="BBHMM.mp3" cover="index4.jpg" artist="Rihanna">BBHMM.mp3</li>
+
+            	<li song=" Where Ya At (feat. Drake).mp3" cover="index5.jpg" artist="Future"> Where Ya At (feat. Drake).mp3</li>
+
+		</ul>
+
+		 <input id="volume" type="range" min="0" max="10" value="5" />
+		 <br>
+
+
+		 <div class="clearfix"></div>
+
+		 	
+	</div>
+
+</div>
+
+
+	
+  
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
